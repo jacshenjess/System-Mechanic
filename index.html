@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>System Mechanic USA Support</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: 'var(--color-primary, #dc2626)', /* Default red-600 */
+              secondary: 'var(--color-secondary, #f8fafc)', /* Default slate-50 */
+              accent: 'var(--color-accent, #ef4444)', /* Default red-500 */
+              textPrimary: 'var(--color-text-primary, #1e293b)', /* Default slate-800 */
+              textSecondary: 'var(--color-text-secondary, #475569)', /* Default slate-600 */
+            },
+            fontFamily: {
+              sans: ['var(--font-sans, ui-sans-serif, system-ui, sans-serif)'],
+              serif: ['var(--font-serif, ui-serif, Georgia, serif)'],
+              mono: ['var(--font-mono, ui-monospace, SFMono-Regular, monospace)'],
+            }
+          }
+        }
+      }
+    </script>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.1",
+    "react/": "https://esm.sh/react@^19.2.1/",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.1/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.10.1"
+  }
+}
+</script>
+</head>
+<body class="font-sans antialiased text-textPrimary bg-secondary min-h-screen flex flex-col">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
